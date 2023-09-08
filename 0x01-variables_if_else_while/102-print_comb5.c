@@ -1,29 +1,31 @@
 #include <stdio.h>
 
+/**
+ * main - output all combination of two digit-numbers
+ * Return: return 0 and exit
+ */
 int main(void)
 {
-	int first_number;
-	int second_number;
+	int n11, n22;
 
-	for (first_number = 0; first_number <= 99; first_number++)
+	for (n11 = 0; n11 <= 99; n11++)
 	{
-	for (second_number = first_number; second_number <= 99; second_number++)
+	for (n22 = 0; n22 <= 99; n22++)
 	{
-	putchar((first_number / 10) + '0');
-	putchar((first_number % 10) + '0');
+	if (n11 < n22 && n11 != n22)
+	{
+	putchar((n11 / 10) + '0');
+	putchar((n11 % 10) + '0');
 	putchar(' ');
-	putchar((second_number / 10) + '0');
-	putchar((second_number % 10) + '0');
-
-	if (first_number != 99 || second_number != 99)
+	putchar((n22 / 10) + '0');
+	putchar((n22 % 10) + '0');
+	if (n11 != 98 || n22 != 99)
 	{
-        putchar(',');
+	putchar(',');
 	putchar(' ');
 	}
 	}
 	}
-
 	putchar('\n');
-
-	return 0;
+	return (0);
 }
