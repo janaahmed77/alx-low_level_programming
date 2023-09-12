@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *print_sign - print_sign
+ * *_abs - _abs
  * @n: The loweer to checked
  * main - check the code.
  * Return: Always 0.
