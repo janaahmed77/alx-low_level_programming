@@ -17,7 +17,7 @@ void times_table(void)
 	{
 	total = x * y;
 	if (total > 9)
-	{ 
+	{
 	_putchar('0' + total / 10);
 	_putchar('0' + total % 10);
 	}
@@ -26,9 +26,9 @@ void times_table(void)
 	_putchar(' ');
 	_putchar('0' + total);
 	}
-	else 
+	else
 	{
-	_putchar('0' + total);	
+	_putchar('0' + total);
 	}
 	if (y != 9)
 	{
