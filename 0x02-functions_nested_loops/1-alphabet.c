@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - print alphabet
+ *
+ * Description: Prints alphabet in one line
  *
  * Return: Always 0 (Success)
  */
