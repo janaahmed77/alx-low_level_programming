@@ -16,10 +16,19 @@ void times_table(void)
 	for (y = 0 ; y < 9 ; y++)
 	{
 	total = x * y;
-	}
+	if (total > 9)
+	{ 
 	_putchar('0' + total / 10);
 	_putchar('0' + total % 10);
-	_putchar(',');
-	_putchar('\n');
+	}
+	else if (y != 0)
+	{
+	_putchar(' ');
+	_putchar('0' + total);
+	}
+	else 
+	{
+	_putchar('0' + total);	
+	}
 	}
 }
