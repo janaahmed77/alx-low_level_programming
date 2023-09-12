@@ -14,7 +14,7 @@ int main(void)
 	while (x1 <= 4000000)
 	{
 	if (x1 % 2 == 0)
-	sum = x1 + sum
+	sum = x1 + sum;
 	next = x1 + x2;
 	x1 = x2;
 	x2 = next;
