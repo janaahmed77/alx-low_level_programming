@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * *print_sign - print_sign
+ * @n: The loweer to checked
  * main - check the code.
  * Return: Always 0.
  */
