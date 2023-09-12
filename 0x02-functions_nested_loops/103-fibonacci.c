@@ -19,6 +19,6 @@ int main(void)
 	x1 = x2;
 	x2 = next;
 	}
-	printf("%ld", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
