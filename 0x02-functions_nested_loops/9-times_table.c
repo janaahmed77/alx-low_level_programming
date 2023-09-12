@@ -30,6 +30,11 @@ void times_table(void)
 	{
 	_putchar('0' + total);	
 	}
+	if (y != 9)
+	{
+	_putchar(',');
+	_putchar(' ');
+	}
 	}
 	}
 }
