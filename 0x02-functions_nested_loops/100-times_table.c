@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *times_table - times_table
+ * *print_times_table - print_times_table
  * @n: The end number
  * main - check the code.
  * Return: Alwajs 0.
  */
-void times_table(int n)
+void print times_table(int n)
 {
 	int i;
 	int j;
