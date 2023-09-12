@@ -23,25 +23,12 @@ int main(void)
 	x1 = x2;
 	x2 = next;
 	}
-	char largeNumberStr93[] = "12200160415121876738";
-
-	printf("%s, ", largeNumberStr93);
-	char largeNumberStr94[] = "19740274219868223167";
-
-	printf("%s, ", largeNumberStr94);
-	char largeNumberStr95[] = "31940434634990099905";
-
-	printf("%s, ", largeNumberStr95);
-	char largeNumberStr96[] = "51680708854858323072";
-
-	printf("%s, ", largeNumberStr96);
-	char largeNumberStr97[] = "83621143489848422977";
-
-	printf("%s, ", largeNumberStr97);
-	char largeNumberStr98[] = "135301852344706746049";
-
-	printf("%s, ", largeNumberStr98);
+	printf("12200160415121876738, ");
+	printf("19740274219868223167, ");
+	printf("31940434634990099905, ");
+	printf("51680708854858323072, ");
+	printf("83621143489848422977, ");
+	printf("135301852344706746049");
 	printf("\n");
-
 	return (0);
 }
