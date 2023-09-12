@@ -19,8 +19,10 @@ void print_times_table(int n)
 	for (j = 0 ; j <= n ; j++)
 	{
 	if (j == 0)
+	{
 	printf("%d", j * i);
 	printf(" ");
+	}
 	else
 	{
 	printf(",  %d", j * i);
