@@ -15,15 +15,15 @@ int main(void)
 	for (i = 3 ; i <= 50 ; i++)
 	{
 	next = x1 + x2;
-	printf("%ld, ", next);
+	printf("%ld", next);
 	if (i != 50)
 	{
-        printf(", ");
-        }
+	printf(", ");
+	}
 	else
 	{
-        printf("\n");
-        }
+	printf("\n");
+	}
 	x1 = x2;
 	x2 = next;
 	}
