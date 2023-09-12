@@ -16,6 +16,14 @@ int main(void)
 	{
 	next = x1 + x2;
 	printf("%ld, ", next);
+	if (i != 50)
+	{
+        printf(", ");
+        }
+	else
+	{
+        printf("\n");
+        }
 	x1 = x2;
 	x2 = next;
 	}
