@@ -11,7 +11,6 @@ int main(void)
 	long int next;
 	long int sum = 0;
 
-	printf("%ld, %ld, ", x1, x2);
 	while (x1 <= 4000000)
 	{
 	if (x1 % 2 == 0)
