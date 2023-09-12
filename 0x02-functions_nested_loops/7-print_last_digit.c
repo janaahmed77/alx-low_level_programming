@@ -2,20 +2,24 @@
 #include <stdio.h>
 /**
  * *print_last_digit - print_last_digit
- * @n: The loweer to checked
+ * @a: The loweer to checked
  * main - check the code.
  * Return: Always 0.
  */
-int print_last_digit(int n)
+int print_last_digit(int a)
 {
-	if (n >= 0)
+	int c;
+
+	if (a < 0)
 	{
-	_putchar(n % 10 + '0');
-	return (n);
+	c = -1 * (a % 10);
+	_putchar(c + '0');
+	return (c);
 	}
 	else
 	{
-	_putchar(n % 10 + '0');
-	return (n);
+	c = a % 10;
+	_putchar(c + '0');
+	return (c);
 	}
 }
