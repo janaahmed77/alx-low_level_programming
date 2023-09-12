@@ -6,7 +6,7 @@
  * main - check the code.
  * Return: Alwajs 0.
  */
-void print times_table(int n)
+void print_times_table(int n)
 {
 	int i;
 	int j;
