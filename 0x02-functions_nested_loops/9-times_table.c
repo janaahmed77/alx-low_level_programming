@@ -12,7 +12,7 @@ void times_table(void)
 	for (x = 0 ; x < 81 ; x++)
 	{
 	_putchar('0' + x / 10);
-	_putchar('0' + h % 10);
+	_putchar('0' + x % 10);
 	_putchar(' , ');
 	_putchar('\n');
 	}
