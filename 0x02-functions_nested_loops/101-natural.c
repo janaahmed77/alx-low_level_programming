@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void main(void)
 {
 	int i;
 	int sum = 0;
