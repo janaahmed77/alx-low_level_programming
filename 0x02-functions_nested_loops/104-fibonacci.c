@@ -23,8 +23,6 @@ int main(void)
 	x1 = x2;
 	x2 = next;
 	}
-	printf("7540113804");
-	printf("746346429, ");
 	printf("1220016041");
 	printf("5121876738, ");
 	printf("197402742");
