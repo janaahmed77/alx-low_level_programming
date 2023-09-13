@@ -34,7 +34,9 @@ int main(void)
 	printf("8362114348");
 	printf("9848422977, ");
 	printf("13530185234");
-	printf("4706746049");
+	printf("4706746049, ");
+	printf("218922995");
+	printf("834555169026");
 	printf("\n");
 	return (0);
 }
