@@ -12,7 +12,7 @@ int main(void)
 	long int next;
 
 	printf("%ld, %ld, ", x1, x2);
-	for (i = 3 ; i <= 92 ; i++)
+	for (i = 3 ; i <= 91 ; i++)
 	{
 	next = x1 + x2;
 	printf("%ld", next);
@@ -23,6 +23,8 @@ int main(void)
 	x1 = x2;
 	x2 = next;
 	}
+	printf("7540113804");
+	printf("746346429, ");
 	printf("1220016041");
 	printf("5121876738, ");
 	printf("197402742");
