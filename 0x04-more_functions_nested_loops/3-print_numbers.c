@@ -1,9 +1,9 @@
 #include "main.h"
-
 /**
- * print_numbers - _print_numbers
- * Return: 1 if c is a digit else 0
+ * print_numbers - check the code.
+ * Return: Always 0.
  */
+
 void print_numbers(void)
 {
 	int i;
