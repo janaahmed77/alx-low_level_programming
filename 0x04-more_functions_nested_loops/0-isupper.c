@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * __isupper - uppercase charater
- *   @c: The loweer to checked
+ *   @c: The upper to checked
  * Return: 1 if c uppercase else 0 otherwise
  */
 int _isupper(int c)
