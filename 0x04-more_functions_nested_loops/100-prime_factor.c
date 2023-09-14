@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * main - Entry Point
+ * Description: Find the largest prime factor of a given number.
+ * Return: 0
  */
 int main(void)
 	{
@@ -17,7 +16,7 @@ int main(void)
 	largestPrimeFactor = 2;
 	number /= 2;
 	}
-	for (i = 3; i <= sqrt(number); i += 2)
+	for (i = 3; i * i <= number; i += 2)
 	{
 	while (number % i == 0)
 	{
