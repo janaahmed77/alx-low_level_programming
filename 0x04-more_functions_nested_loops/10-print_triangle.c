@@ -1,27 +1,33 @@
 #include "main.h"
+
 /**
- * print_square - return num without 2,4
- *@size: n is underscore
- * Return: Always
+ * print_triangle - Prints a triangle of '#' characters
+ * @size: The size of the triangle
  */
 void print_triangle(int size)
 {
-int j;
-int s;
-
 	if (size <= 0)
 	{
-	_putchar ('\n');
+	_putchar('\n');
 	}
 	else
 	{
-	for (s = 0 ; s < size ; s++)
+	int i, j;
+
+	for (i = 1; i <= size; i++)
 	{
-	for (j = 0 ; j < size -s ; j++)
+	for (j = size; j > 0; j--)
 	{
-	_putchar ('#');
+	if (j <= i)
+	{
+	_putchar('#');
 	}
-	_putchar ('\n');
+	else
+	{
+	_putchar(' ');
+	}
+	}
+	_putchar('\n');
 	}
 	}
 }
