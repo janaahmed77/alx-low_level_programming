@@ -1,20 +1,19 @@
 #include "main.h"
 /**
- * print_numbers - check the code.
- * Return: Always 0.
+ * print_most_numbers - return num without 2,4
+ *
+ * Return: Always
  */
-
 void print_most_numbers(void)
 {
-	int i;
-
-	for (i = 0 ; i <= 9 ; i++)
-	{
-	if (c == 2 || c == 4)
-	{
-	continue;
-	}
-	_putchar (i + '0');
-	}
-	_putchar ('\n');
+int c;
+for (c = 0; c <= 9; c++)
+{
+if (c == 2 || c == 4)
+{
+continue;
+}
+_putchar('0' + c);
+}
+_putchar('\n');
 }
