@@ -1,4 +1,4 @@
-#include "1-main.h"
+#include "main.h"
 
 /**
  * _isupper - UpperCase character
