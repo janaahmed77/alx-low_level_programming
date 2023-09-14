@@ -1,23 +1,27 @@
 #include "main.h"
 /**
- * print_triangle - return num without 2,4
+ * print_square - return num without 2,4
  *@size: n is underscore
  * Return: Always
  */
 void print_triangle(int size)
 {
-	int rows = size;
+int j;
+int s;
 
-	for (int i = 1; i <= rows; i++)
+	if (size <= 0)
 	{
-	for (int j = 1; j <= rows - i; j++)
-	{
-	printf(" ");
+	_putchar ('\n');
 	}
-	for (int k = 1; k <= i; k++)
+	else
 	{
-	printf("#");
+	for (s = 0 ; s < size ; s++)
+	{
+	for (j = 0 ; j < size -s ; j++)
+	{
+	_putchar ('#');
 	}
-	printf("\n");
+	_putchar ('\n');
+	}
 	}
 }
