@@ -6,14 +6,29 @@
  */
 void print_number(int n)
 	{
+	if (n == 0)
+	{
+	_putchar('0');
+	return;
+	}
 	if (n < 0)
 	{
 	_putchar('-');
 	n = -n;
 	}
-	if (n / 10 != 0)
+	int reversed = 0;
+	int digit;
+
+	while (n > 0)
 	{
-	print_number(n / 10);
+	digit = n % 10;
+	reversed = reversed * 10 + digit;
+	n /= 10;
 	}
-	_putchar((n % 10) + '0');
+	while (reversed > 0)
+	{
+	digit = reversed % 10;
+	_putchar(digit + '0');
+	reversed /= 10;
+	}
 }
