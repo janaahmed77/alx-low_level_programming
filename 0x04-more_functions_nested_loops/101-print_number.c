@@ -6,30 +6,34 @@
  */
 void print_number(int n)
 {
-	unsigned int num;
-
+	if (n == 0)
+	{
+	_putchar('0');
+	return;
+	}
 	if (n < 0)
 	{
 	_putchar('-');
-	num = -n;
+	n = -n;
 	}
-	else
-	{
-	num = n;
-	}
-	int reversed = 0;
-	int digit;
+	int num_digits = 0;
+	int temp = n;
 
-	while (num > 0)
+	while (temp != 0)
 	{
-	digit = num % 10;
-	reversed = reversed * 10 + digit;
-	num /= 10;
+	temp /= 10;
+	num_digits++;
 	}
-	while (reversed > 0)
+	int divisor = 1;
+
+	for (int i = 1; i < num_digits; i++)
 	{
-	digit = reversed % 10;
-	_putchar(digit + '0');
-	reversed /= 10;
+	divisor *= 10;
+	}
+	while (divisor > 0)
+	{
+	_putchar((n / divisor) + '0');
+	n %= divisor;
+	divisor /= 10;
 	}
 }
