@@ -1,12 +1,11 @@
 #include "main.h"
-
 /**
  * print_number - Prints an integer
  * @n: The integer to be printed
  */
 void print_number(int n)
 {
-	unsigned int num;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
@@ -17,21 +16,9 @@ void print_number(int n)
 	{
 	num = n;
 	}
-	if (num == 0)
+	if (num / 10 != 0)
 	{
-	_putchar('0');
-	return;
+	print_number(num / 10);
 	}
-	unsigned int divisor = 1;
-
-	while (num / divisor >= 10)
-	{
-	divisor *= 10;
-	}
-	while (divisor > 0)
-	{
-	_putchar((num / divisor) + '0');
-	num %= divisor;
-	divisor /= 10;
-	}
+	_putchar((num % 10) + '0');
 }
