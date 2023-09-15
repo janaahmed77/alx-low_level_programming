@@ -17,8 +17,8 @@ void print_number(int n)
 	{
 	num = n;
 	}
-	unsigned int reversed = 0;
-	unsigned int digit;
+	int reversed = 0;
+	int digit;
 
 	while (num > 0)
 	{
