@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 /**
  * print_rev - to swap value
  * @s: The integer to be printed
