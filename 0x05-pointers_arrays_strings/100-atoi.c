@@ -1,31 +1,39 @@
+#include "main.h"
 #include <stdio.h>
-#include <string.h>
-
 /**
- * _atoi - Prints an integer
- * @s: The integer to be printed
- * Return: last
+ * _atoi - convert string to integer
+ * @s: char pointer
+ * Return: 0
  */
 int _atoi(char *s)
-	{
-	int num = 0;
-	int sign = 1;
-	int i = 0;
+{
+	int Value, i, newValue;
 
-	while (s[i] == ' ')
+	newValue = 1;
+
+	i = Value = 0;
+
+	while (((s[i] < '0') || s[i] > '9') && s[i] != 0)
 	{
-	i++;
-	}
-	if (s[i] == '-' || s[i] == '+')
-	{
-	sign = (s[i] == '-') ? -1 : 1;
-	i++;
-	}
-	while (s[i] >= '0' && s[i] <= '9')
-	{
-	num = num * 10 + (s[i] - '0');
-	i++;
+		if (s[i] == '-')
+			newValue = newValue * -1;
+		i++;
 	}
 
-	return (num * sign);
+	while (((s[i] >= '0') && s[i] <= '9') && s[i] != 0)
+	{
+		if (Value >= 0)
+		{
+			Value = Value * 10 - (s[i] - '0');
+			i++;
+		}
+		else
+		{
+			Value = Value * 10 - (s[i] - '0');
+			i++;
+		}
+	}
+	newValue = newValue * -1;
+	return (Value * newValue);
 }
+
