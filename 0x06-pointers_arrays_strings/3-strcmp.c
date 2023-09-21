@@ -2,10 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strncpy - convert string to integer
- * @src: char pointer
- * @dest: char pointer
- * @n: char array
+ * _strcmp - convert string to integer
+ * @s1: input value
+ * @s2: input value
  * Return: 0
  */
 int _strcmp(char *s1, char *s2)
