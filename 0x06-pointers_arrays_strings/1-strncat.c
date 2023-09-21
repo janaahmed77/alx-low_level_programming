@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strcat - convert string to integer
+ * _strncat - convert string to integer
  * @src: char pointer
  * @dest: char pointer
  * @n: char array
