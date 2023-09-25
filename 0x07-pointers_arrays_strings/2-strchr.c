@@ -2,10 +2,9 @@
 #include <string.h>
 #include "main.h"
 /**
- * _memcpy - prints buffer
- * @dest: buffer
- * @n: size
- * @src:hii
+ * _strchr - prints buffer
+ * @s: buffer
+ * @c: size
  * Return: void
  */
 char *_strchr(char *s, char c)
