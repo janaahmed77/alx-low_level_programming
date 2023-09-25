@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * *_strspn - concatenates two strings
+ * _strpbrk - concatenates two strings
  * @s: char pointer
  * @accept: char pointer
  * Return: 0
