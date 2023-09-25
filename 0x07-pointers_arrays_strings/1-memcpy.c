@@ -2,7 +2,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * _memset - prints buffer
+ * _memcpy - prints buffer
  * @dest: buffer
  * @n: size
  * @src:hii
