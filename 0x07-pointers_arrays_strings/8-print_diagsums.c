@@ -1,21 +1,20 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
+#include <stdio.h>
 /**
- * print_diagsums - prints buffer
- * @a: size
- * Return: void
+ * print_diagsums - diagsums
+ * @a: type char string
+ * @size: type int
+ * Return: 0
  */
 void print_diagsums(int *a, int size)
 {
-	int main_diag_sum = 0;
-	int off_diag_sum = 0;
+	int i;
+	int diagsums1 = 0, diagsums2 = 0;
 
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
-	main_diag_sum += a[i * size + i];
-	off_diag_sum += a[i * size + (size - i - 1)];
+		diagsums1 += *(a + i * size + i);
+		diagsums2 += *(a + i * size + (size - 1 - i));
 	}
-
-	printf("%d, %d\n", main_diag_sum, off_diag_sum);
+	printf("%d, %d\n", diagsums1, diagsums2);
 }
