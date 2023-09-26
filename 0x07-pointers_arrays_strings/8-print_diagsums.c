@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 #include "main.h"
+/**
+ * print_diagsums - prints buffer
+ * @a: size
+ * Return: void
+ */
 void print_diagsums(int *a, int size)
 {
 	int main_diag_sum = 0;
