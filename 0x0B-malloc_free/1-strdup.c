@@ -20,8 +20,8 @@ char *_strdup(char *str)
 	if (aaa == NULL)
 		return (NULL);
 
-	for (int i = 0; str[i]; i++)
-		aaa[i] = str[i];
+	for (int ii = 0; str[ii]; ii++)
+		aaa[ii] = str[ii];
 
 	return (aaa);
 }
